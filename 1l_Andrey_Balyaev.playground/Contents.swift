@@ -29,10 +29,10 @@ print("Площадь: " + String(cat1*cat2/2))
 // Задание 3. Вычисление суммы вклада через 5 лет
 var vklad = 100.0
 let proc = 0.05
-for i in 0...4 {
+for i in 1...5 {
     vklad = vklad + vklad * proc
     let year: String
-    switch i + 1 {
+    switch i {
     case 1:
         year = "год"
     case 5:
@@ -40,5 +40,5 @@ for i in 0...4 {
     default:
         year = "года"
     }
-    print("Сумма через " + String(i + 1) + " " + year + " " + String(vklad) + " RUпий")
+    print("Сумма через " + String(i) + " " + year + " " + String(vklad) + " RUпий")
 }
