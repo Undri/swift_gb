@@ -1,7 +1,3 @@
-import Cocoa
-
-var str = "Hello, playground"
-
 // Задание 1. Решение квадратного уравнения
 
 let a: Double = 3.0
@@ -30,7 +26,7 @@ print("Гипотенуза: " + String(hyp))
 print("Периметр: " + String(cat1 + cat2 + hyp))
 print("Площадь: " + String(cat1*cat2/2))
 
-// Задание 3.
+// Задание 3. Вычисление суммы вклада через 5 лет
 var vklad = 100.0
 let proc = 0.05
 for i in 0...4 {
@@ -44,5 +40,5 @@ for i in 0...4 {
     default:
         year = "года"
     }
-    print("Сумма через " + String(i + 1) + " " + year + " " + String(vklad))
+    print("Сумма через " + String(i + 1) + " " + year + " " + String(vklad) + " RUпий")
 }
