@@ -174,9 +174,7 @@ class TrunkCar: Car {
 // attempt to show all class properties
 func printProp(car: Car) {
     print("----------------")
-    let mir = Mirror(reflecting: car)
-    let properties = mir.children
-    for property in properties {
+    for property in Mirror(reflecting: car).children {
         print("\(property.label!) = \(property.value)")
     }
 }
